@@ -27,37 +27,3 @@
       "verb": "POST",
       "useJwt": true
     },
-    "publish": {
-      "url": "https://dtv-percentage-with-limits.herokuapp.com/publish",
-      "verb": "POST",
-      "useJwt": true
-    },
-    "validate": {
-      "url": "https://dtv-percentage-with-limits.herokuapp.com/validate",
-      "verb": "POST",
-      "useJwt": true
-    }
-  },
-  "wizardSteps": [
-    {
-      "label": "Configure Routing",
-      "key": "configure",
-      "active": true
-    }
-  ],
-  "userInterfaces": {
-    "configModal": {
-      "height": 400,
-      "width": 700,
-      "fullscreen": false
-    }
-  },
-  "schema": {
-    "arguments": {
-      "execute": {
-        "inArguments": [],
-        "outArguments": []
-      }
-    }
-  }
-}
