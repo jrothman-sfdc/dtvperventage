@@ -1,14 +1,14 @@
 {
   "workflowApiVersion": "1.1",
   "metaData": {
-    "icon": "img/icon.png",
-    "category": "message"
+    "icon": "https://dtv-percentage-with-limits.herokuapp.com/images/icon.png",
+    "category": "custom"
   },
   "type": "REST",
   "lang": {
     "en-US": {
       "name": "Percentage Based Routing with Limits",
-      "description": "Custom activity for percentage-based routing with limits."
+      "description": "A custom activity that allows percentage-based routing with a maximum limit on the number of records."
     }
   },
   "arguments": {
@@ -17,15 +17,11 @@
       "outArguments": [],
       "url": "https://dtv-percentage-with-limits.herokuapp.com/execute",
       "verb": "POST",
-      "body": "",
-      "header": "",
-      "format": "json",
       "useJwt": true,
       "timeout": 10000
     }
   },
   "configurationArguments": {
-    "applicationExtensionKey": "dtv-percentage-with-limits-key",
     "save": {
       "url": "https://dtv-percentage-with-limits.herokuapp.com/save",
       "verb": "POST",
@@ -43,12 +39,16 @@
     }
   },
   "wizardSteps": [
-    { "label": "Configure", "key": "step1" }
+    {
+      "label": "Configure Routing",
+      "key": "configure",
+      "active": true
+    }
   ],
   "userInterfaces": {
     "configModal": {
-      "height": 200,
-      "width": 500,
+      "height": 400,
+      "width": 700,
       "fullscreen": false
     }
   },
